@@ -10,7 +10,6 @@ import EditRegister from '../EditRegister';
 import ArrowCircleLeftOutlinedIcon from '@mui/icons-material/ArrowCircleLeftOutlined';
 import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOutlined';
 
-
 function ContactCard() {
     const { arrayTransaction } = useContext(UserContext)
     const [id, setId] = useState()
@@ -24,9 +23,7 @@ function ContactCard() {
     }
 
     function pagination(arrayTransaction, pageNumber) {
-
         const arrayPagination = arrayTransaction.slice((pageNumber - 1) * 16, pageNumber * 16);
-        console.log(arrayPagination)
         setArray(arrayPagination)
     }
 
