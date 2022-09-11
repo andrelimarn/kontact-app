@@ -2,12 +2,14 @@
     max-width: 1300px;
     max-height: 100vh;
     display: flex;
-    gap: 10px;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
+.add-button {
+    padding-bottom: 10px;
+}
 
 .card {
     margin-bottom: 10px;

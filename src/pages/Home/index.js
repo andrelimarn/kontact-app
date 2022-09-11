@@ -6,8 +6,7 @@ import userContext from '../../contexts/UserContext';
 import api from '../../services/api';
 import './style.css';
 import ContactCard from '../../components/ContactCard';
-import Button from '@mui/material/Button';
-
+import AvatarIcon from '../../assets/avatar.jpg'
 
 function Home() {
 
@@ -50,17 +49,16 @@ function Home() {
 
             <div className='home-container'>
                 <div className='menu-bar'>
+                    <div className='user-container'>
+                        <img className='avatar-icon' src={AvatarIcon}></img>
+                        <span className='user-login'>
+                            {localStorage.getItem('usuario')}
+                        </span>
+                    </div>
                     <div className='exit-icon'>
                         <ExitToAppIcon onClick={() => handleLogout()} />
                     </div>
                 </div>
-                <div className='btn-add-register'>
-                    <Button onClick={() => setShowModal(true)} variant="contained">Novo Contato</Button>
-
-                </div>
-
-
-
                 <div>
                     <ContactCard />
                 </div>

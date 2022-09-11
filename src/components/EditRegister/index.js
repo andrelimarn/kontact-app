@@ -93,10 +93,10 @@ function EditRegister({ setShowEditModal, id }) {
                     </div>
                     <div>
                         <a href={`sip:` + item.telefone.trim()}>
-                            <PhoneIcon className='telefone' />
+                            <PhoneIcon className='telefone' fontSize='small' />
                         </a>
-                        <DeleteIcon className='lixeira' onClick={() => setShowDeleteModal(true)} />
-                        <CloseIcon className='edit-close' onClick={() => setShowEditModal(false)} />
+                        <DeleteIcon className='lixeira' fontSize='small' color='error' onClick={() => setShowDeleteModal(true)} />
+                        <CloseIcon className='edit-close' fontSize='medium' onClick={() => setShowEditModal(false)} />
                         {showDeleteModal && <DeleteRegister
                             id={item.id}
                             nome={item.nome}

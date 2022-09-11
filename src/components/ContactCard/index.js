@@ -9,9 +9,10 @@ import Typography from '@mui/material/Typography';
 import EditRegister from '../EditRegister';
 import ArrowCircleLeftOutlinedIcon from '@mui/icons-material/ArrowCircleLeftOutlined';
 import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOutlined';
+import Button from '@mui/material/Button';
 
 function ContactCard() {
-    const { arrayTransaction } = useContext(UserContext)
+    const { arrayTransaction, setShowModal } = useContext(UserContext)
     const [id, setId] = useState()
     const [showEditModal, setShowEditModal] = useState(false)
     const [page, setpage] = useState(1);
@@ -42,7 +43,12 @@ function ContactCard() {
 
     return (
         <>
+            <div className='add-button'>
+                <Button onClick={() => setShowModal(true)} size='small' variant="contained">Novo Contato</Button>
+            </div>
+
             <div className='card-container'>
+
                 {showEditModal && <EditRegister
                     id={id}
                     setShowEditModal={setShowEditModal} />}
