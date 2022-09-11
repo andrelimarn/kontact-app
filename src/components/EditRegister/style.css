@@ -1,0 +1,90 @@
+.modal-edit-container {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(16, 15, 15, 0.56);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    z-index: 10;
+}
+
+.modal-edit-header {
+    padding: 0 28px 0 28px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-edit-register {
+    padding: 24px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 476px;
+    height: 563px;
+    background-color: #FFFDFD;
+    border-radius: 20px;
+}
+
+.modal-edit-container img {
+    align-self: flex-end;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.edit-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 272px;
+    height: 43px;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}
+
+.edit-register {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.edit-register input {
+    padding-left: 10px;
+    margin-bottom: 15px;
+    width: 364px;
+    height: 40px;
+    font-family: Rubik;
+    font-weight: 400;
+    background-color: #E8E8E8;
+    border: 1px solid #E8E8E8;
+}
+
+.edit-error {
+    color: rgba(251, 6, 21, 0.65);
+}
+
+.telefone {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.lixeira {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.edit-close {
+    cursor: pointer;
+
+}

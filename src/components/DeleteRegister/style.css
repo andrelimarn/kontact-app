@@ -1,0 +1,85 @@
+.modal-delete-container {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(16, 15, 15, 0.56);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    z-index: 10;
+}
+
+.modal-delete-register {
+    padding: 24px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 476px;
+    height: 319px;
+    background-color: #FFFDFD;
+    border-radius: 20px;
+}
+
+.modal-delete-container img {
+    align-self: flex-end;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.delete-title {
+    margin: 16px 0 24px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 272px;
+    height: 43px;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+}
+
+.confirm-msg {
+
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+.btn-delete-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-delete-container button {
+    all: unset;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 366px;
+    height: 50px;
+
+}
+
+.btn-delete-container .btn-delete {
+    margin-top: 31px;
+    background-color: #04C45C;
+}
+
+.btn-delete-container .btn-delete-cancel {
+    margin-top: 8px;
+    background-color: rgba(251, 6, 21, 0.65);
+}

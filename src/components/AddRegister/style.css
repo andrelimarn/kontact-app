@@ -1,0 +1,77 @@
+.modal-add-container {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(16, 15, 15, 0.56);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    z-index: 10;
+}
+
+.modal-add-register {
+    padding: 24px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 476px;
+    height: 563px;
+    background-color: #FFFDFD;
+    border-radius: 20px;
+}
+
+.modal-add-container img {
+    align-self: flex-end;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.add-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 272px;
+    height: 43px;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}
+
+.add-register {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.add-register input {
+    padding-left: 10px;
+    margin-bottom: 15px;
+    width: 364px;
+    height: 40px;
+    font-family: Rubik;
+    font-weight: 400;
+    background-color: #E8E8E8;
+    border: 1px solid #E8E8E8;
+}
+
+.aa-error {
+    color: rgba(251, 6, 21, 0.65);
+}
+
+.switch-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-text-area {
+    margin-bottom: 20px;
+}

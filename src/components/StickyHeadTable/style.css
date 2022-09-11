@@ -1,0 +1,11 @@
+.img-icon {
+    width: 25px;
+    height: 25px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.table-header {
+    background-color: #F4F0F0;
+    border: none;
+}
